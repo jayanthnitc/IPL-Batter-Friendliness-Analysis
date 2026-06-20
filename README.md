@@ -1,127 +1,142 @@
- Impact of Batter-Friendly Conditions on IPL Scoring Trends (2008–2025)
+# IPL Batter-Friendliness Analysis (2008–2025)
 
- Project Overview
+## Project Overview
 
-This project investigates whether the Indian Premier League (IPL) has become increasingly batter-friendly between 2008 and 2025.
+This project analyzes whether the **Indian Premier League (IPL)** has become increasingly **batting-friendly from 2008 to 2025**.
 
-Using ball-by-ball IPL data, I analyzed scoring trends, run rates, boundary frequency, bowling effectiveness, and match outcomes to determine whether modern IPL conditions favor batters more than earlier seasons.
+Using ball-by-ball match data, the study evaluates long-term trends in **scoring patterns, strike rates, boundary frequency, bowling effectiveness, and match outcomes** to determine structural shifts in T20 cricket.
 
-
-Objective
-
-To analyze whether IPL cricket has become significantly more batter-friendly over time using historical IPL data.
+The goal is to quantify whether modern IPL conditions statistically favor batters compared to earlier seasons.
 
 
- Research Questions
+# Objectives
 
-- Has the average innings score increased over time?
-- Has the average run rate increased over time?
-- Are more sixes being hit than before?
-- Has bowling become less effective?
-- Have 200+ scores become more common?
-- Which venues are the most batting-friendly?
-
-
- Dataset
-
- matches.csv
-
-Contains:
-- Season
-- Venue
-- Teams
-- Match Result
-
-deliveries.csv
-
-Contains:
-- Ball-by-ball information
-- Runs scored
-- Wickets
-- Boundaries
-
-Source: Kaggle IPL Dataset
+- Analyze how IPL scoring patterns have evolved over time  
+- Measure changes in batting dominance using statistical indicators  
+- Evaluate decline or improvement in bowling effectiveness  
+- Identify venues that favor high-scoring matches  
+- Build a composite metric: **Batter Friendliness Index (BFI)**  
+- Create an interactive dashboard for insight communication  
 
 
- Tools & Technologies
+## Research Questions
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Power BI
-- Jupyter Notebook
-
-
- Methodology
-
- Data Cleaning
-
-- Removed unnecessary columns
-- Checked missing values
-- Standardized season information
-
- Feature Engineering
-
-Created:
-
-- Average innings score by season
-- Run rate by season
-- Sixes per season
-- Economy rate by season
-- Number of 200+ totals
-- Venue-wise average scores
-
- Batter Friendliness Index (BFI)
-
-Developed a custom Batter Friendliness Index (BFI) by combining:
-
-- Average innings score
-- Run rate
-- Six-hitting frequency
-- Bowling economy rate
-
-All metrics were normalized using MinMax Scaling and combined into a single score.
-
-Dashboard
-
- Page 1: IPL Scoring Trends
-
-- KPI Cards
-- Average Score Trend
-- Run Rate Trend
-- Economy Trend
-- BFI Trend
-
- Page 2: Power Hitting & Venue Analysis
-
-- Sixes Trend
-- 200+ Totals Trend
-- Top Batting-Friendly Venues
+- Has average innings score increased over time?  
+- Are teams scoring at higher run rates in recent seasons?  
+- Is six-hitting frequency increasing?  
+- Has bowling economy worsened over time?  
+- Are 200+ totals becoming more common?  
+- Which venues are the most batting-friendly?  
 
 
- Key Findings
+# Dataset
 
-- Average innings scores increased significantly.
-- Run rates increased over time.
-- Six-hitting frequency increased substantially.
-- Bowling economy rates increased.
-- 200+ scores became more common.
-- Batter Friendliness Index showed a strong upward trend.
+`matches.csv`
+
+Contains match-level information:
+- Season  
+- Venue  
+- Teams  
+- Match result  
+- Winner  
+
+ `deliveries.csv`
+
+Ball-by-ball dataset:
+- Runs per ball  
+- Extras  
+- Wickets  
+- Boundary events  
+- Over and ball number  
+
+Source: Kaggle IPL Dataset  
 
 
-Conclusion
 
-The analysis provides strong evidence that IPL has become increasingly batter-friendly between 2008 and 2025.
+## Tools & Technologies
 
-Higher scores, faster run rates, increased six-hitting frequency, and rising bowling economy rates collectively support this conclusion.
+- Python (Data Analysis)  
+- Pandas, NumPy (Data Processing)  
+- Matplotlib, Seaborn (Visualization)  
+- Power BI (Dashboarding)  
+- Jupyter Notebook (EDA Workflow)  
 
 
-Future Improvements
+## Methodology
 
-- Weather analysis
-- Pitch condition analysis
-- Boundary size analysis
-- Team strategy analysis
-- Predictive score forecasting models
+## 1. Data Cleaning & Preparation
+- Removed unnecessary columns  
+- Handled missing values  
+- Standardized season formats  
+- Merged match and delivery datasets  
+
+
+## 2. Feature Engineering
+
+Derived metrics:
+- Average innings score per season  
+- Run rate per season  
+- Sixes per season  
+- Bowling economy rate per season  
+- Count of 200+ totals  
+- Venue-wise average scores  
+
+
+## 3. Batter Friendliness Index (BFI)
+
+A custom composite index was created using:
+
+- Normalized average innings score  
+- Run rate  
+- Six-hitting frequency  
+- Inverse bowling economy rate  
+
+All features were scaled using **Min-Max normalization** and combined into a single index to measure batting dominance over time.
+
+
+# Dashboard (Power BI)
+
+## Page 1: IPL Scoring Trends
+- KPI Cards (Avg Score, Run Rate, Economy Rate)  
+- Season-wise scoring trend  
+- Batter Friendliness Index (BFI) trend  
+
+## Page 2: Power Hitting & Venue Analysis
+- Sixes trend over seasons  
+- 200+ score frequency trend  
+- Top batting-friendly venues  
+
+
+
+# Key Insights
+
+- Average innings scores have increased significantly over time  
+- Run rates show a strong upward trend  
+- Six-hitting frequency has increased sharply in modern IPL  
+- Bowling economy rates have risen, indicating higher scoring pressure  
+- 200+ totals are now significantly more frequent  
+- Batter Friendliness Index (BFI) shows a consistent upward trend  
+
+
+
+# Conclusion
+
+The analysis provides strong statistical evidence that the **IPL has become increasingly batting-friendly from 2008 to 2025**.
+
+Modern IPL conditions strongly favor batting performance, as shown by:
+
+- Higher scoring rates  
+- Increased boundary frequency  
+- More frequent high totals  
+- Declining bowling effectiveness  
+
+## Key Visualizations
+
+Average IPL Innings Score by Season
+                          ![alt text](<Screenshot 2026-06-19 201754-1.pn)
+Average Run Rate by Season
+                          ![alt text](<Screenshot 2026-06-19 201837-1.png>)  
+Total Sixes by Season
+                          ![alt text](<Screenshot 2026-06-19 201902-1.png>)
+Season-wise Economy Rate
+                          ![alt text](<Screenshot 2026-06-19 201954.png>)
