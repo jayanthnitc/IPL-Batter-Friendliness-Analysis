@@ -134,16 +134,16 @@ Modern IPL conditions strongly favor batting performance, as shown by:
 
   Average IPL Innings Score by Season
 
-![Average Score](visuals/avg score.png)
+  (visuals/avg score.png)
  
   Average Run Rate by Season
 
-![Run Rate](visuals/avg run rate.png)
+  (visuals/avg run rate.png)
     
   Total Sixes by Season
 
-![Sixes](visuals/no of sixes.png)
+  (visuals/no of sixes.png)
 
    Season-wise Economy Rate
 
-![Economy Rate](visuals/economy rate.png)
+  (visuals/economy rate.png)
